@@ -1,7 +1,7 @@
 'use client'
 
 import React, {useEffect, useState} from 'react';
-import {MdClose, MdDone} from "react-icons/all";
+import {MdClose, MdDone} from "react-icons/md";
 
 const Quiz = ({ quizData }) => {
     const [userAnswers, setUserAnswers] = useState({});
