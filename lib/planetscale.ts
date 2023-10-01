@@ -9,6 +9,13 @@ export interface User {
   email: string;
 }
 
+export interface ResourceType {
+  id: number|null;
+  name: string;
+  path: string;
+  data: string;
+}
+
 interface Database {
   users: User;
   // https://github.com/nextauthjs/next-auth/issues/4922
