@@ -9,15 +9,20 @@ export interface User {
   email: string;
 }
 
-export interface ResourceType {
-  id: number|null;
-  name: string;
-  path: string;
+export interface QuizContent {
+  content_id: number | null;
+  quiz_name: string;
+  summary: string;
   data: string;
+  created_at?: Date;
+  updated_at?: Date;
+  quiz_icon?: string | null;
+  document_hash?: string | null;
 }
 
 interface Database {
   users: User;
+  quizContents: QuizContent
   // https://github.com/nextauthjs/next-auth/issues/4922
 }
 
